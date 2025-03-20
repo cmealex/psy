@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Personal Website</title>
+    <link rel="stylesheet" href="website-css.css">
+    <script src="website-js.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="website-logo.svg" alt="Your Logo" id="logo">
+        </div>
+        <nav>
+            <ul class="tabs">
+                <li data-tab="about" class="active">About Me</li>
+                <li data-tab="projects">Projects</li>
+                <li data-tab="hobbies">Hobbies</li>
+                <li data-tab="contact">Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- About Me Section -->
+        <section id="about" class="tab-content active">
+            <div class="hero">
+                <h1>Welcome to My Website</h1>
+                <p>Web Developer | Designer | Your Title</p>
+                <button class="cta-button">View Projects</button>
+            </div>
+            
+            <div class="about-content">
+                <h2>About Me</h2>
+                <div class="accent-line"></div>
+                <p>This is where you'll write about yourself, your skills, and your experience.</p>
+                <p>Add more details about your background, education, and what you're passionate about.</p>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="tab-content">
+            <h2>My Projects</h2>
+            <div class="accent-line"></div>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="project1.jpg" alt="Project 1">
+                    <h3>Project Title 1</h3>
+                    <p>Brief description of the project.</p>
+                    <a href="#" class="project-link">View Details</a>
+                </div>
+                <div class="project-card">
+                    <img src="project2.jpg" alt="Project 2">
+                    <h3>Project Title 2</h3>
+                    <p>Brief description of the project.</p>
+                    <a href="#" class="project-link">View Details</a>
+                </div>
+                <div class="project-card">
+                    <img src="project3.jpg" alt="Project 3">
+                    <h3>Project Title 3</h3>
+                    <p>Brief description of the project.</p>
+                    <a href="#" class="project-link">View Details</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hobbies Section -->
+        <section id="hobbies" class="tab-content">
+            <h2>My Hobbies</h2>
+            <div class="accent-line"></div>
+            <div class="hobbies-container">
+                <div class="hobby-item">
+                    <div class="hobby-icon">🎮</div>
+                    <h3>Gaming</h3>
+                    <p>Description of your gaming interests.</p>
+                </div>
+                <div class="hobby-item">
+                    <div class="hobby-icon">📚</div>
+                    <h3>Reading</h3>
+                    <p>Types of books you enjoy reading.</p>
+                </div>
+                <div class="hobby-item">
+                    <div class="hobby-icon">🏃‍♂️</div>
+                    <h3>Sports</h3>
+                    <p>Sports or fitness activities you enjoy.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="tab-content">
+            <h2>Contact Me</h2>
+            <div class="accent-line"></div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>Email: your.email@example.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">LinkedIn</a>
+                        <a href="#" class="social-icon">GitHub</a>
+                        <a href="#" class="social-icon">Twitter</a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send a Message</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
